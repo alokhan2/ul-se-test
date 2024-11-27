@@ -1,0 +1,144 @@
+:root {
+  --color-text: #212121;
+  --color-green: #00a451;
+  --color-white: #ffffff;
+  --color-lightgrey: #f4f4f4;
+  --color-darkgrey: #e8e8e8;
+  --color-lightblue: #fafbfe;
+  --color-dark: #272c36;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: var(--color-black);
+  letter-spacing: -0.42px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  width: 32px;
+}
+
+.btn {
+  display: flex;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: max-content auto;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--color-darkgrey);
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 24px;
+}
+
+.logo {
+  width: 160px;
+}
+
+.main {
+  min-height: calc(100vh - 14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 10rem;
+}
+
+.chats {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 16rem);
+}
+
+.chat {
+  margin: 1rem;
+  padding: 2rem;
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+
+.bot {
+  background-color: pink;
+  width: fit-content;
+}
+
+.chat-footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid red;
+}
+
+.inp {
+  padding: 0.5rem;
+  display: flex;
+  background-color: aquamarine;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 70rem;
+}
+
+.inp > input {
+  width: 100%;
+  outline: 1px solid blue;
+  padding: 1rem;
+}
+
+.inp > input,
+.inp > button {
+  background: transparent;
+  border: none;
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: white;
+  padding: 40px;
+}
