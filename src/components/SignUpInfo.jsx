@@ -16,16 +16,3 @@ function SignUpInfo() {
 }
 
 export default SignUpInfo
-
-// import React from 'react';
-
-// function SignUpInfo({ value, onChange }) {
-//   return (
-//     <div>
-//       <label>Sign Up Info:</label>
-//       <input type="text" value={value} onChange={(e) => onChange(e.target.value)} />
-//     </div>
-//   );
-// }
-
-// export default SignUpInfo;
